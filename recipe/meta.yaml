@@ -10,7 +10,7 @@ source:
   sha256: 13190fa95d4c21bce04b4bee22d6a4e3fb19a93b6999b1d104bd02c476706c28
 
 build:
-  noarch: python
+  noarch: python >=3.6
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -19,7 +19,7 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3.6
     - argcomplete
     - jmespath
     - pygments
