@@ -1,5 +1,5 @@
 {% set name = "knack" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dfc6aef6760ea9a9620577e01540617678d78cab3111a0f03e8b9f987d0f08ca
+  sha256: 16aa47240add6badd933a0b27576f3c090d7469177dc941e3ece05ca88123199
 
 build:
   noarch: python
@@ -25,7 +25,6 @@ requirements:
     - jmespath
     - pygments
     - pyyaml
-    - six
     - tabulate
 
 test:
