@@ -1,5 +1,5 @@
 {% set name = "knack" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 13190fa95d4c21bce04b4bee22d6a4e3fb19a93b6999b1d104bd02c476706c28
+  sha256: c5728128297e6d269791085cf96c2ffdfcef58cf83c634a5cb92eb03b2929838
 
 build:
   noarch: python
