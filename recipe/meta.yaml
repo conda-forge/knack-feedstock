@@ -1,5 +1,5 @@
 {% set name = "knack" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c5728128297e6d269791085cf96c2ffdfcef58cf83c634a5cb92eb03b2929838
+  sha256: eb6568001e9110b1b320941431c51033d104cc98cda2254a5c2b09ba569fd494
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - python >=3.6
     - pip
   run:
+    - packaging
     - python >=3.6
     - argcomplete
     - jmespath
